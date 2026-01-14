@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat RPG Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="game-view">
+        <div class="hud-bars">
+            <div class="bar-container"><div class="bar-fill red"></div></div>
+            <div class="bar-container"><div class="bar-fill green"></div></div>
+        </div>
+
+        <div class="inventory">
+            <div class="inv-slot slot-1"></div>
+            <div class="inv-slot slot-2"></div>
+            <div class="inv-slot slot-3"></div>
+            <div class="inv-slot slot-4"></div>
+        </div>
+
+        <div class="fish-counter">
+            <span>🐟</span> <span id="fish-count">12</span>
+        </div>
+
+        <div class="menu-btn" onclick="openMenu()">
+            <div class="cat-head-icon">🐱</div>
+        </div>
+
+        <div id="player">
+            <img src="https://placekitten.com/200/200" alt="Player">
+        </div>
+    </div>
+
+    <div id="transition-blob"></div>
+
+    <div id="menu-screen">
+        <div class="close-btn" onclick="closeMenu()">← Back</div>
+        
+        <div class="menu-content">
+            <div class="menu-links">
+                <h1 onclick="openAbout()">About Me</h1>
+                <h1 onclick="openPastWork()">Past Work</h1>
+                <h1 onclick="openContact()">Contacts</h1>
+            </div>
+            
+            <div class="campfire-container">
+                <img src="images/catcampiree.gif" alt="Cozy Cat">
+            </div>
+        </div>
+    </div>
+
+    <div id="about-window" class="retro-window">
+        <div class="window-header">
+            <div class="window-title">C:\USERS\JESS\ABOUT_ME.TXT</div>
+            <div class="window-close-box" onclick="closeAbout()">X</div>
+        </div>
+        <div class="window-body">
+            <div class="text-column">
+                <p class="greeting">Hello! I'm Jess, I'm a designer based in London. ヽ(o＾▽＾o)ノ</p>
+                <p>I'm interested in expressing ideas through creative storytelling, like building frontend for tools or building 3D environments with Blender. I've done a variety of work with clients working in the esports and gaming industry.</p>
+                <p>I like to think imaginatively backed with understanding of the technical side. I finished my bachelors at CSM (UAL) in Graphic Design, and will be graduating from my MSc at UCL in Digital Humanities in September 26.</p>
+                <p class="signature">I also love video games and cats ^_^</p>
+            </div>
+            <div class="image-column">
+                <img src="images/IMG_1916.JPG" alt="Jess">
+            </div>
+        </div>
+    </div>
+<div id="contact-window" class="retro-window small-window">
+        <div class="window-header">
+            <div class="window-title">C:\NET\CONNECT.EXE</div>
+            <div class="window-close-box" onclick="closeContact()">X</div>
+        </div>
+        <div class="window-body contact-layout">
+            
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/jessica-xu-032bb2237/" target="_blank" class="retro-btn">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <a href="https://discord.com/users/718924549692850319" target="_blank" class="retro-btn">
+                    <img src="images/disc.png" alt="Discord">
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <p class="email-text">email: jessieboo0131@gmail.com</p>
+                <p class="email-text">jessica.xu.25@ucl.ac.uk</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="pastwork-window" class="retro-window">
+        <div class="window-header">
+            <div class="window-title">C:\WORK\PROJECTS</div>
+            <div class="window-close-box" onclick="closePastWork()">X</div>
+        </div>
+        <div class="window-body pastwork-layout">
+            <div class="folder-item">
+                <img src="images/folder.png" alt="folder" class="folder-icon">
+                <p class="folder-name">LOA Planner</p>
+            </div>
+            <div class="folder-item">
+                <img src="images/folder.png" alt="folder" class="folder-icon">
+                <p class="folder-name">LOA Loading Screen</p>
+            </div>
+            <div class="folder-item">
+                <img src="images/folder.png" alt="folder" class="folder-icon">
+                <p class="folder-name">Illustrations</p>
+            </div>
+            <div class="folder-item">
+                <img src="images/folder.png" alt="folder" class="folder-icon">
+                <p class="folder-name">Children's book design</p>
+            </div>
+            <div class="folder-item">
+                <img src="images/folder.png" alt="folder" class="folder-icon">
+                <p class="folder-name">Emotes & Thumbnails</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
